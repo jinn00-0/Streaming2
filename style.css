@@ -1,0 +1,135 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+.header {
+    background-color: #444;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .title {
+    font-size: 24px;
+}
+.header .perfil {
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: black;
+}
+.pesquisa {
+    background-color: #666;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    width: 300px;
+    margin: 15px auto;
+}
+.pesquisa input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    flex: 1;
+    padding: 0 10px;
+}
+.pesquisa input:focus {
+    outline: none;
+}
+.pesquisa .icon {
+    color: white;
+    cursor: pointer;
+}
+.categorias {
+    padding: 15px;
+}
+.categoria {
+    margin-bottom: 20px;
+}
+.categoria h2 {
+    margin-bottom: 10px;
+}
+.categoria .videos {
+    display: flex;
+    gap: 10px;
+}
+.categoria .videos .video{
+    border: 5px solid #595e61;
+    margin-left: 10px;
+    width: 25vh;
+    height: 20vh;
+    border-radius: 10px;
+}
+.categoria .videos .video iframe {
+    background-color: #555;
+    width: 25vh;
+    height: 20vh;
+    border-radius: 10px;
+}
+.categoria .videos .video:hover {
+    transform: scale(1.05);
+    scale: 20vh;
+}
+.categoria .videos .video iframe:hover {
+    transform: scale(1.05);
+    scale: 20vh;
+}
+.perfil .perfil-button .menu-content {
+    visibility: hidden;
+    width: 0;
+}
+.opçoes {
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none; 
+}
+
+.opçoes ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.opçoes ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.opçoes ul li:hover {
+    background-color: #444;
+}
+
+.sobrepor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; 
+    z-index: 1;
+}
+.perfil {
+    position: relative; 
+    z-index: 2;
+}
+
+
+
+
